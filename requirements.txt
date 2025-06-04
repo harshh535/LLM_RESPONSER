@@ -1,0 +1,11 @@
+Flask==2.2.3
+SpeechRecognition==3.8.1
+PyAudio==0.2.14
+gTTS==2.2.3
+google-genai
+speechrecognition  
+requests
+pyttsx3
+ffmpeg-python
+google-cloud-texttospeech
+
