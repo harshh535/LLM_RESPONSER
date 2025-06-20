@@ -1,40 +1,37 @@
-This is a Flask-based conversational web app where users can record voice input, which is then:
 
-🎤 Transcribed using Google Speech Recognition
+This is a **Flask-based conversational web app** where users can record voice input, which is then:
 
-🤖 Sent to Google Gemini API for generating a text response
+- 🎤 Transcribed using **Google Speech Recognition**
+- 🤖 Sent to **Google Gemini API** for generating a text response
+- 🔊 Converted to **speech output (MP3)** using **Google Cloud TTS** or **gTTS**
+- 📽️ Played back with a **demo talking video loop** (pre-rendered or real-time with Wav2Lip)
 
-🔊 Converted to speech output (MP3) using Google Cloud TTS or gTTS
+---
 
-📽️ Played back with a demo talking video loop (pre-rendered or real-time with Wav2Lip)
+## ✨ Features
 
-✨ Features
-🌐 Web interface built with Flask and HTML templates
+- 🌐 Web interface built with **Flask** and **HTML templates**
+- 🎧 Converts WebM audio to WAV using `ffmpeg` for **speech-to-text**
+- 🧠 Uses **Gemini API** (Google Generative AI) to generate smart, concise replies
+- 🔊 Converts response to audio using **Google Cloud TTS** or fallback **gTTS**
+- 🧪 Plays back voice with a **demo video**, simulating real-time speaking
+- 🗂️ Maintains **conversation session history**
+- 🔁 Wav2Lip-based **lip-synced video generation** (optional, demo available)
 
-🎧 Converts WebM audio to WAV using ffmpeg for speech-to-text
+---
 
-🧠 Uses Gemini API (Google Generative AI) to generate smart, concise replies
+## 🔑 Environment Variables
 
-🔊 Converts response to audio using Google Cloud TTS or gTTS (fallback)
+Create a `.env` file or set these in your shell:
 
-🧪 Plays back voice with a demo video, simulating real-time speaking
-
-🗂️ Maintains conversation session history
-
-🔁 Wav2Lip-based lip-synced video generation (optional, demo available)
-
-🔑 Environment Variables
-Create a .env file or set these in your shell:
-
-bash
-Copy
-Edit
+```bash
 GOOGLE_API_KEY=your-gemini-api-key
 FLASK_SECRET=your-flask-secret-key
 ✅ GOOGLE_API_KEY is required for Gemini API integration.
 
 🔧 Installation & Setup
-Clone the repository:
+Clone the repository
+
 Install dependencies:
 
 bash
@@ -47,38 +44,39 @@ bash
 Copy
 Edit
 python app.py
-Open in your browser: http://localhost:5000
+Open in your browser:
+http://localhost:5000
 
 🧠 Gemini API Integration
-The app sends user transcriptions as prompts to Gemini 2.0 Flash model using your Google API key. Responses are kept short (20 words max) as defined by a system message prompt.
+The app sends user transcriptions as prompts to Gemini 2.0 Flash model using your API key.
+Responses are kept short (20 words max) using a system message.
 
 🗣️ Text-to-Speech
 The assistant voice is generated using:
 
 ✅ Google Cloud TTS (if available)
 
-🔁 Fallback to gTTS (lightweight, no authentication needed)
+🔁 Fallback: gTTS (no auth required)
 
-📽️ Wav2Lip (Optional: Real-Time Talking Video)
+📽️ Wav2Lip (Optional Real-Time Talking Video)
 You can use Wav2Lip to generate lip-synced video responses.
 
-Wav2Lip requires ~4GB of space
+Requires ~3GB of space
 
-It uses files like hparams.py, inference.py, and a pre-trained model
+Uses hparams.py, inference.py, etc.  and a pre-trained model which lies in wav2lip
+ 
+Requires environment setup (Python version, PyTorch, OpenCV, etc.)
 
-You'll need to set up the environment according to your Python version and install dependencies like torch, opencv, etc.
+All setup instructions and files are available in the repo
 
-All necessary files (sample outputs and setup instructions) are provided in the repository
+📁 Attached Media
+✅ Sample output videos using Wav2Lip
 
-📁 Attached with the project:
+✅ UI Screenshots & output responses
 
-Sample output videos generated using Wav2Lip
+✅ Pre-rendered fallback talking demo video
 
-Images/screenshots of the UI and responses
-
-Pre-rendered demo video for fallback video playback
-
-📦 requirements.txt
+📦 Requirements
 txt
 Copy
 Edit
@@ -88,8 +86,17 @@ gtts
 google-cloud-texttospeech
 requests
 ffmpeg-python
-📸 Demo Screenshots
-(Screenshots and sample video files are included in the repository)
+## 📸 Demo Screenshots
+
+### 🖼️ LLM Interface & Input  
+![LLM Screenshot 1](llm1 .png)
+
+### 🖼️ Gemini Output and TTS Response  
+![LLM Screenshot 2](llm2.png)
+
+🖼️ Gemini Output and TTS Response
+
+📂 Make sure these images are located inside static/images/ or update the path accordingly.
 
 📚 Credits
 Google Gemini API
@@ -105,6 +112,7 @@ FFmpeg
 📌 Notes
 ffmpeg must be installed and accessible via system PATH
 
-You can choose to use either a simple demo video or integrate Wav2Lip for dynamic lip-synced video generation
+You can use either a static demo video or integrate Wav2Lip for dynamic, real-time video
 
-Make sure to manage API limits and file sizes when deploying publicly
+Manage API rate limits and file sizes before deploying the app publicly
+
