@@ -1,11 +1,97 @@
-Flask==2.2.3
-SpeechRecognition==3.8.1
-PyAudio==0.2.14
-gTTS==2.2.3
-google-genai
-speechrecognition  
-requests
-pyttsx3
-ffmpeg-python
-google-cloud-texttospeech
-
+audioread          3.0.1
+blinker            1.9.0
+certifi            2024.8.30
+cffi               1.17.1
+charset-normalizer 3.3.2
+click              8.1.8
+colorama           0.4.6
+decorator          4.4.2
+ffmpeg-python      0.2.0
+filelock           3.16.1
+Flask              3.1.0
+future             1.0.0
+gTTS               2.5.4
+idna               3.10
+imageio            2.35.1
+imageio-ffmpeg     0.5.1
+importlib_metadata 8.7.0
+itsdangerous       2.2.0
+Jinja2             3.1.4
+joblib             1.4.2
+librosa            0.7.0
+llvmlite           0.40.1
+MarkupSafe         2.1.5
+moviepy            1.0.3
+mpmath             1.3.0
+networkx           3.2.1
+numba              0.57.1
+numpy              1.23.5
+opencv-python      4.8.0.76
+pillow             10.4.0
+pip                25.1
+proglog            0.1.10
+pycparser          2.22
+requests           2.32.3
+resampy            0.4.3
+scikit-learn       1.5.2
+scipy              1.13.1
+setuptools         58.1.0
+six                1.16.0
+soundfile          0.12.1
+SpeechRecognition  3.14.2
+sympy              1.13.3
+threadpoolctl      3.5.0
+torch              2.0.1
+tqdm               4.66.1
+typing_extensions  4.12.2
+urllib3            2.2.3
+Werkzeug           3.1.3
+zipp               3.21.0
+(venv) PS C:\Users\harsh\Desktop\pravit_app\Wav2lip-Fix-For-Inference> pip freeze
+audioread==3.0.1
+blinker==1.9.0
+certifi==2024.8.30
+cffi==1.17.1
+charset-normalizer==3.3.2
+click==8.1.8
+colorama==0.4.6
+decorator==4.4.2
+ffmpeg-python==0.2.0
+filelock==3.16.1
+Flask==3.1.0
+future==1.0.0
+gTTS==2.5.4
+idna==3.10
+imageio==2.35.1
+imageio-ffmpeg==0.5.1
+importlib_metadata==8.7.0
+itsdangerous==2.2.0
+Jinja2==3.1.4
+joblib==1.4.2
+librosa==0.7.0
+llvmlite==0.40.1
+MarkupSafe==2.1.5
+moviepy==1.0.3
+mpmath==1.3.0
+networkx==3.2.1
+numba==0.57.1
+numpy==1.23.5
+opencv-python==4.8.0.76
+pillow==10.4.0
+proglog==0.1.10
+pycparser==2.22
+requests==2.32.3
+resampy==0.4.3
+scikit-learn==1.5.2
+scipy==1.13.1
+six==1.16.0
+soundfile==0.12.1
+SpeechRecognition==3.14.2
+sympy==1.13.3
+threadpoolctl==3.5.0
+torch==2.0.1
+tqdm==4.66.1
+typing_extensions==4.12.2
+urllib3==2.2.3
+Werkzeug==3.1.3
+zipp==3.21.0
