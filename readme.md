@@ -29,7 +29,7 @@ Create a `.env` file or set these in your shell:
 ## 📸 Demo Screenshots
 
 ### 🖼️ Input Voice UI  
-![LLM Screenshot 1](llm1 .png)
+![LLM Screenshot 1](llm1.png)
 
 ### 🖼️ Gemini Output & Audio  
 ![LLM Screenshot 2](llm2.png)
