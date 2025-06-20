@@ -35,12 +35,6 @@ FLASK_SECRET=your-flask-secret-key
 
 🔧 Installation & Setup
 Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/gemini-voice-chat.git
-cd gemini-voice-chat
 Install dependencies:
 
 bash
