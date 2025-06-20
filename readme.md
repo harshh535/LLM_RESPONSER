@@ -25,10 +25,10 @@ This is a **Flask-based conversational web app** where users can record voice in
 
 ## 📸 Demo Screenshots
 
-### 🖼️ Input Voice UI  
+### 🖼️ Input Voice UI  :-
 ![LLM Screenshot 1](llm1.png)
 
-### 🖼️ Gemini Output & Audio  
+## Home Page:-
 ![LLM Screenshot 2](llm2.png)
 ## 🔑 Environment Variables
 
