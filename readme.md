@@ -20,9 +20,6 @@ This is a **Flask-based conversational web app** where users can record voice in
 
 ---
 
-## 🔑 Environment Variables
-
-Create a `.env` file or set these in your shell:
 
 
 
@@ -33,30 +30,29 @@ Create a `.env` file or set these in your shell:
 
 ### 🖼️ Gemini Output & Audio  
 ![LLM Screenshot 2](llm2.png)
+## 🔑 Environment Variables
 
-```bash
+Create a `.env` file or set these in your shell:
+
+
+bash:-
 GOOGLE_API_KEY=your-gemini-api-key
 FLASK_SECRET=your-flask-secret-key
 ✅ GOOGLE_API_KEY is required for Gemini API integration.
-
+---------------------------------------------
 🔧 Installation & Setup
 Clone the repository
 
 Install dependencies:
-
-bash
-Copy
-Edit
 pip install -r requirements.txt
+
+-------------------------------
 Run the app:
 
-bash
-Copy
-Edit
 python app.py
 Open in your browser:
 http://localhost:5000
-
+------------------------------------------------
 🧠 Gemini API Integration
 The app sends user transcriptions as prompts to Gemini 2.0 Flash model using your API key.
 Responses are kept short (20 words max) using a system message.
@@ -78,7 +74,7 @@ Uses hparams.py, inference.py, etc.  and a pre-trained model which lies in wav2l
 Requires environment setup (Python version, PyTorch, OpenCV, etc.)
 
 All setup instructions and files are available in the repo
-
+-------------------------------------------------------
 📁 Attached Media
 ✅ Sample output videos using Wav2Lip
 
@@ -86,27 +82,10 @@ All setup instructions and files are available in the repo
 
 ✅ Pre-rendered fallback talking demo video
 
-📦 Requirements
-txt
-Copy
-Edit
-Flask
-speechrecognition
-gtts
-google-cloud-texttospeech
-requests
-ffmpeg-python
-## 📸 Demo Screenshots
 
-### 🖼️ LLM Interface & Input  
-![LLM Screenshot 1](llm1 .png)
-
-### 🖼️ Gemini Output and TTS Response  
-![LLM Screenshot 2](llm2.png)
-
+-------------------------------------------
 🖼️ Gemini Output and TTS Response
 
-📂 Make sure these images are located inside static/images/ or update the path accordingly.
 
 📚 Credits
 Google Gemini API
@@ -118,7 +97,7 @@ gTTS
 Wav2Lip
 
 FFmpeg
-
+-------------------------------------------------
 📌 Notes
 ffmpeg must be installed and accessible via system PATH
 
