@@ -48,8 +48,9 @@ pip install -r requirements.txt
 
 -------------------------------
 Run the app:
-
 python app.py
+
+
 Open in your browser:
 http://localhost:5000
 ------------------------------------------------
