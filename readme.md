@@ -84,9 +84,12 @@ All setup instructions and files are available in the repo
 ✅ Pre-rendered fallback talking demo video
 
 
--------------------------------------------
-🖼️ Gemini Output and TTS Response
+------------------------------------------
 
+
+The link for wav2lip repository is :-
+https://github.com/HassanMuhammadSannaullah/Wav2lip-Fix-For-Inference
+----------------------------------------------------------------
 
 📚 Credits
 Google Gemini API
