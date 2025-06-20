@@ -24,6 +24,16 @@ This is a **Flask-based conversational web app** where users can record voice in
 
 Create a `.env` file or set these in your shell:
 
+
+
+## 📸 Demo Screenshots
+
+### 🖼️ Input Voice UI  
+![LLM Screenshot 1](llm1 .png)
+
+### 🖼️ Gemini Output & Audio  
+![LLM Screenshot 2](llm2.png)
+
 ```bash
 GOOGLE_API_KEY=your-gemini-api-key
 FLASK_SECRET=your-flask-secret-key
